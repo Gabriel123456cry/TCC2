@@ -1,0 +1,101 @@
+/* Geral */
+
+@import url('https://fonts.googleapis.com/css?family=Candal');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(180deg, #C19277 0%, #B6A752 100%);
+    background-repeat: no-repeat;
+}                      
+
+textarea:focus, input:focus { 
+  outline: none;
+}
+
+label{ 
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Candal";
+}
+
+/* Container Login */
+
+#login-container {
+
+    background-color: #CABE82;
+    border-bottom: 2px solid #000000;
+    width: 473px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid #000;
+}
+
+img{
+
+width: 230px;
+height: 140px;
+
+}
+
+/* Formulário */
+
+form{
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+input{
+border-bottom: 3px solid #000;
+padding: 10px;
+font-size: 1rem;
+height: 40px;
+width: 425px;
+margin-bottom: 20px;
+border-radius: 15px;
+background-color: #a6a378;
+}
+
+input[type="submit"]{
+
+text-align: center;
+align-content: top;
+font-weight: bold;
+border: 3px solid #000;
+height: 50px;
+width: 243px;
+border-radius: 15px;
+background-color: #a6a378;
+cursor: pointer;
+margin-left: auto;
+font-size: 20px;
+margin-right: auto;
+font-family: "Candal";
+}
+
+#forgotpass{
+    color: #000000;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Candal";
+}
