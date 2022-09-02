@@ -8,25 +8,27 @@
 }
 
 body{
-    background:#A6A378;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }   
 
 #menuho2{
- 
+    
     border: 1px royalblue solid ;
     display: grid;
-    position: absolute;
+    position: absolute; 
     justify-content: center;
     background-color: #CABE82;
     width: 10vw;
     box-shadow: 10px 5px 10px #82805e;
-    height: 120.6%;
+    height: 101%;
 }
 
-input{
+
+
+
+a{
 
     text-align: right;
     align-content: top;
@@ -49,25 +51,92 @@ input{
     
 img{
     
-    width: 181px;
-    height: 109px;
+    width: 178px;
+    height: 100px;
     
 }
 
-#MP {
-    background-image: url(../IMG/grafico.png);
+/* Imagens BotÃµes */
+
+#HM {
+    background-image: url(../IMG/Home.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60PX;
 }
 
+#HV {
+    background-image: url(../IMG/HV.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60PX;
+}
+
+#LP {
+    background-image: url(../IMG/LP.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60PX;
+}
+
+#Sair {
+    background-image: url(../IMG/Sair.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60PX;
+}
+
+#LC {
+    background-image: url(../IMG/LC.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60PX;
+}
+
+#operador{
+    border: 1px solid yellow;
+    width: 98px;
+    height: 98px;
+    position: center;
+    margin-left: 2.5vh;
+    display: inline-block;
+}
+
+#icon{
+    width: 98px;
+    height: 98px;
+    margin-left: 17,5%;
+}
 
 #principal{
     
     padding-bottom: 10PX;
     height:100vh;
-    background:#A6A378;
+    background-color:#A6A378;
     width: 100vw;
     border: 1px solid orangered;
     
 } 
+
+#trevo{
+height: 80px;
+width: 130px;
+margin-left: 10px;
+}
+
+#quadrado{
+    width: 1400px;
+    height: 930px;
+    border-radius: 10px;
+    border: 3px solid #000;
+    background-color: #CABE82;
+    margin-left: 17%;
+    margin-top: 1%;
+}
+
+#teste{
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgb(255, 9, 202);
+    background-color:bisque
+}
