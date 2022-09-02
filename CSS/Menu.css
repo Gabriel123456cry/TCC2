@@ -9,6 +9,7 @@
     background:#A6A378;
     width: 100vw;
     border: 1px solid orangered;
+    position:absolute;
     
 } 
 * {
@@ -37,7 +38,8 @@ textarea:focus, input:focus {
 
 
 
-label, #teste{ 
+
+label,  #teste{ 
     font-size: 15px;
     font-weight: bold;
     font-family: "Candal";
@@ -45,70 +47,163 @@ label, #teste{
 
 /* Menu Vertical */
 
-#menuho{
- 
-    margin-top: -200px;
-    border: 1px royalblue solid ;
-    display: grid;
-    position: absolute;
-    justify-content: center;
-    background-color: #CABE82;
-    width: 285px;
-    box-shadow: 10px 5px 10px #82805e;
-    height: 105.2%;
+#menuho{    
+border: 1px royalblue solid ;
+display: grid;
+height:100%;
+justify-content: center;
+background-color: #CABE82;
+width: 285px;
+box-shadow: 10px 5px 10px #82805e;
+z-index: 1;
+position: fixed; 
+z-index: 1; 
+top: 0; 
+left: 0;
+overflow-x: hidden; 
+}
+   
+
+
+
+
+
+
+#scroll{
+    border: 1px red solid;
+      overflow-x: hidden; 
+      display: inline-block;
+}
+
+#conteudo{
+
+    border: #000 solid 1px;
+    display: inline-block;
 }
 
 #operador{
     border: lawngreen solid 1px;
-    margin-top: 6vh;
+    position: sticky;
+    
+    margin-bottom:10px;
 }
 
-img{
+
+
+
+
+.logo{
+    
+        margin-left: 3rem;
+
     
     width: 181px;
     height: 109px;
     
 }
 
-
+/* 
 .stack-top{
     z-index: 9;
     margin: 20px; 
-}
+} */
 
 
 
-a{
+/* .linkm{
+  position:relative;
 
-    text-align: center;
-    align-content: top;
-    font-weight: bold;
+justify-content: center;
+  
     border: 3px solid #000;
     height: 70px;
     width: 250px;
-    margin-bottom: 0.438rem;
+ 
     border-radius: 15px;
     background-color: #a6a378;
-    cursor: pointer;
-    margin-left: auto;
-    font-size: 20px;
-    margin-right: auto;
-    font-family: "Candal";
-    padding: 1rem;
+    
+    margin-bottom:3px;
+    font-size: 17px;
 
-    text-decoration: none;
-    color: #000
+    justify-content: center;
+
     }
 
-img{
-    margin-left: 3rem;
+.lk{
+    text-align:center;
+    text-decoration: none;
+    color: #000;
+    font-family: "Candal";
+    border: 1px solid indigo;
+ 
+
+    width: 100px;
+    position:relative;
+    display:inline-block;
+
 }
+
+
+.MP{
+    width: 60px;
+    height: 60px;
+    border: 1px red solid;
+
+}
+ */
+
+
+
+
+.sidebtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #A6A378;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    width: 250px;
+    height: 80px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+position: relative;
+
+text-decoration: none;
+}
+
+.MP{
+    
+
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: "Candal";
+    text-align: center;
+    text-decoration: none;
+
+    
+}
+
+
+.imgbtn{
+    width: 55px;
+    height: auto;
+
+    border: #000000 solid 1px;
+    
+}
+
 
 
 /* Header */
 
 .header{
-    position: relative;
+    position: sticky; 
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
     padding: 10px;
     font-family: "Candal";
     font-size: 25px;
@@ -122,25 +217,30 @@ img{
 
 #titulo{
 
-    display: inline-block;
+    display:inline-block;
     border: 1px solid yellow;
 
 }
 .icones{
-    margin-block-start: auto;
+  
     height: 56px;
     width: 56px;
-    position: relative;
-    display: inline;
-    top:10px;
+
 
 }
 #icon{
     width: 98px;
     height: 98px;
     border-radius: 15px;
-    margin-left: 10px;
-    margin-top: 25px;
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    top:10px;
+    position: relative;
+    display: inline-block;
+    margin-block-start: auto;
+    margin-bottom: 10px;
+   
 }
 
 #nome{
@@ -159,9 +259,8 @@ img{
 }
 #carrinho{
     display: inline-block;
-    position: sticky;
     border: solid red 1px;
-    left: 95%;
+    
     
 }
 
@@ -174,33 +273,86 @@ h1{
     margin-left: 20rem;
     border:solid red 1px;
     margin-top: 1rem;
-    display: flex;
-    font-size: 50px;
+    display: inline-block;
+    font-size: 48px;
 
 }
 
-#MP {
-    padding-left: 10px; 
-    background-image: url(../IMG/grafico.png);
-    background-repeat: no-repeat;
-    background-size: 60PX;
-}
-
-
-#ped{
-  
+.teste2{
+    margin-left: 20rem;
+    margin-top: 1rem;
+    background: #CABE82;
     border: 3px solid #000000;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    position: absolute;
     width: 943px;
     height: 135px;
-    left: 316px;
-    top: 204px;
-    position:absolute;
-    background: #CABE82;
+    font-size: 50px;
+}
 
-    border-radius: 15px;
+
+.info{
+    font-family: 'Candal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align:center;
+}
+
+.pen{
+    font-family: 'Candal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align:left;
+    margin-top: 45px;
+
+
+}
+
+.sectionone{
+border:solid 1px red;
+display:inline-block;
+width: fit-content ;
+
 
 
 
 }
+.sectiontwo{
+    border:solid 1px red;
+    width: fit-content ;
+    display: inline-block;
+    
+    
+    
+}
+
+
+    .header{
+    
+        display: flex;
+        align-items: center;
+    
+        width: auto;
+        margin-right: 0;
+        
+        
+    
+        
+    }
+     
+    #grafico{
+        margin-left: 20px;
+    }
+    
+    #carrinho{
+        margin-right: 30px;
+    }
+
+    .vendidos{
+        display: flex;
+        align-items: center;
+    
+    }
