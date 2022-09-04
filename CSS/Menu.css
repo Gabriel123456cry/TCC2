@@ -2,16 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css?family=Candal');
 
-#principal{
-    
+
+
+#principal {
+
     padding-bottom: 10PX;
-    height:100vh;
-    background:#A6A378;
+    height: 100vh;
+    background: #A6A378;
     width: 100vw;
-    border: 1px solid orangered;
-    position:absolute;
-    
-} 
+
+    position: absolute;
+
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -19,27 +22,29 @@
     list-style: none;
 }
 
-#test{
-    
+#test {
+
     padding-right: 100px;
 }
 
 
-body{
-    background:#A6A378;
+body {
+    background: #A6A378;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-}                      
+}
 
-textarea:focus, input:focus { 
-  outline: none;
+textarea:focus,
+input:focus {
+    outline: none;
 }
 
 
 
 
-label,  #teste{ 
+label,
+#teste {
     font-size: 15px;
     font-weight: bold;
     font-family: "Candal";
@@ -47,159 +52,196 @@ label,  #teste{
 
 /* Menu Vertical */
 
-#menuho{    
-border: 1px royalblue solid ;
-display: grid;
-height:100%;
-justify-content: center;
-background-color: #CABE82;
-width: 285px;
-box-shadow: 10px 5px 10px #82805e;
-z-index: 1;
-position: fixed; 
-z-index: 1; 
-top: 0; 
-left: 0;
-overflow-x: hidden; 
-}
-   
+#menuho {
 
-
-
-
-
-
-#scroll{
-    border: 1px red solid;
-      overflow-x: hidden; 
-      display: inline-block;
-}
-
-#conteudo{
-
-    border: #000 solid 1px;
-    display: inline-block;
-}
-
-#operador{
-    border: lawngreen solid 1px;
-    position: sticky;
-    
-    margin-bottom:10px;
-}
-
-
-
-
-
-.logo{
-    
-        margin-left: 3rem;
-
-    
-    width: 181px;
-    height: 109px;
-    
-}
-
-/* 
-.stack-top{
-    z-index: 9;
-    margin: 20px; 
-} */
-
-
-
-/* .linkm{
-  position:relative;
-
-justify-content: center;
-  
-    border: 3px solid #000;
-    height: 70px;
-    width: 250px;
- 
-    border-radius: 15px;
-    background-color: #a6a378;
-    
-    margin-bottom:3px;
-    font-size: 17px;
-
+    display: grid;
+    height: 100%;
+    justify-items: center;
     justify-content: center;
+    background-color: #CABE82;
+    /* width: 285px; */
+    width: 170px;
+    box-shadow: 10px 5px 10px #82805e;
+    z-index: 1;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 1s;
+}
 
-    }
+#menuho:hover {
+    width: 285px;
 
-.lk{
-    text-align:center;
-    text-decoration: none;
-    color: #000;
-    font-family: "Candal";
-    border: 1px solid indigo;
- 
-
-    width: 100px;
-    position:relative;
-    display:inline-block;
+    transition: width 1s;
 
 }
 
-
-.MP{
-    width: 60px;
-    height: 60px;
-    border: 1px red solid;
-
-}
- */
-
-
-
-
-.sidebtn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #A6A378;
-    border: 3px solid #000000;
-    border-radius: 15px;
-    width: 250px;
-    height: 80px;
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-position: relative;
-
-text-decoration: none;
+#menuho:hover .sidebtn {
+    width: 240px;
+    transition: width 1s;
 }
 
-.MP{
-    
+#menuho:hover .MP {
 
+    display: inline-block;
     color: black;
     font-weight: bold;
     font-size: 19px;
     font-family: "Candal";
     text-align: center;
     text-decoration: none;
+    opacity: 1;
 
-    
+    transition-delay: .7s;
+    transition-duration: 0.5s;
+
+}
+
+#menuho:hover #sairadjustment {
+    display: inline-block;
+}
+
+#menuho:hover #nome {
+    display: inline-block;
+    font-family: "Candal";
+    font-size: 18px;
+    width: 40%;
+    opacity: 1;
+
+    transition-property: opacity;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+}
+
+.MP {
+
+    display: inline-block;
+    opacity: 0;
+    /* color: black;
+        font-weight: bold;
+        font-size: 19px;
+        font-family: "Candal";
+        text-align: center;
+        text-decoration: none; */
+
+    transition-property: opacity;
+    transition-delay: .0s;
+    transition-duration: .0s;
+    transition-timing-function: linear;
+
+
+
+
+
+}
+
+#scroll {
+
+    overflow-x: hidden;
+    display: inline-block;
+}
+
+#conteudo {
+
+    border: #000 solid 1px;
+    display: inline-block;
+}
+
+#operador {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+
+    position: sticky;
+
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+
+
+    margin-bottom: 10px;
 }
 
 
-.imgbtn{
-    width: 55px;
+
+
+
+.logo {
+
+    width: 140px;
     height: auto;
 
-    border: #000000 solid 1px;
-    
 }
 
 
+.sidebtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #A6A378;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    /* width: 240px; */
+    width: 100px;
+    height: 70px;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    transition: width 1s;
+    text-decoration: none;
+}
+
+
+
+#sairadjustment {
+    display: none;
+}
+
+
+.imgbtn {
+    width: 55px;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: top;
+}
+
+#icon {
+    width: 98px;
+    height: 98px;
+    border-radius: 15px;
+    display: inline-block;
+
+    transition-duration: 1s;
+    transition-timing-function: linear;
+
+}
+
+#nome {
+
+    display: none;
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-delay: .0s;
+    transition-duration: .0s;
+    transition-timing-function: linear;
+    /* display: inline-block;
+    font-family: "Candal";
+    font-size: 18px;
+    width: 40%; */
+}
 
 /* Header */
 
-.header{
-    position: sticky; 
+.header {
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -211,148 +253,138 @@ text-decoration: none;
     color: #000;
     box-shadow: 0px 5px 10px #82805e;
     width: auto;
-    margin-left: 285px;
-    border: 1px solid indigo;
-}
-
-#titulo{
-
-    display:inline-block;
-    border: 1px solid yellow;
+    /* margin-left: 285px; */
+    padding-left: 180px;
 
 }
-.icones{
-  
+
+#titulo {
+
+    display: inline-block;
+
+
+}
+
+.icones {
+
     height: 56px;
     width: 56px;
 
 
 }
-#icon{
-    width: 98px;
-    height: 98px;
-    border-radius: 15px;
-    margin-left: 20px;
-    position: relative;
-    display: inline-block;
-    top:10px;
-    position: relative;
-    display: inline-block;
-    margin-block-start: auto;
-    margin-bottom: 10px;
-   
-}
-
-#nome{
-    margin-left: 150px;
-    margin-top: -80px;
-    position: absolute;
-    font-family: "Candal";
-    font-size: 18px;
-}
 
 
-#graf{
+
+
+#graf {
     display: inline-block;
     position: sticky;
-    border: solid red 1px;
+
 }
-#carrinho{
+
+#carrinho {
     display: inline-block;
-    border: solid red 1px;
-    
-    
+
+
+
 }
 
-h1{
-    font-size: 25px;
-    text-align: top;
-}
 
-#teste{
-    margin-left: 20rem;
-    border:solid red 1px;
+
+#teste {
+    margin-left: 12rem;
     margin-top: 1rem;
     display: inline-block;
     font-size: 48px;
 
+
 }
 
-.teste2{
-    margin-left: 20rem;
+.teste2 {
+    padding: 5px;
+    margin-left: 12rem;
     margin-top: 1rem;
     background: #CABE82;
     border: 3px solid #000000;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    width: 943px;
+    width: 80%;
     height: 135px;
     font-size: 50px;
+
+    padding-bottom: 15px;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
-.info{
+
+
+.info {
     font-family: 'Candal';
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
-    text-align:center;
+    text-align: center;
 }
 
-.pen{
+.pen {
     font-family: 'Candal';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    text-align:left;
-    margin-top: 45px;
+    text-align: left;
 
 
 }
 
-.sectionone{
-border:solid 1px red;
-display:inline-block;
-width: fit-content ;
+.sectionone {
+
+    margin-top: 0px;
+    width: 40%;
+    margin-left: 20px;
+
 
 
 
 
 }
-.sectiontwo{
-    border:solid 1px red;
-    width: fit-content ;
+
+.sectiontwo {
+    width: fit-content;
     display: inline-block;
-    
-    
-    
+    margin-left: 10px;
+
+
+
+
 }
 
 
-    .header{
-    
-        display: flex;
-        align-items: center;
-    
-        width: auto;
-        margin-right: 0;
-        
-        
-    
-        
-    }
-     
-    #grafico{
-        margin-left: 20px;
-    }
-    
-    #carrinho{
-        margin-right: 30px;
-    }
+.header {
 
-    .vendidos{
-        display: flex;
-        align-items: center;
-    
-    }
+    display: flex;
+    align-items: center;
+
+    width: auto;
+    margin-right: 0;
+
+
+
+
+}
+
+#grafico {
+    margin-left: 20px;
+}
+
+#carrinho {
+    margin-right: 30px;
+}
+
+.vendidos {
+    display: flex;
+    align-items: center;
+
+}
