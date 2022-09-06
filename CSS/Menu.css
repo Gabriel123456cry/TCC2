@@ -143,11 +143,6 @@ label,
     display: inline-block;
 }
 
-#conteudo {
-
-    border: #000 solid 1px;
-    display: inline-block;
-}
 
 #operador {
     display: flex;
