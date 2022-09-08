@@ -7,6 +7,23 @@
     list-style: none;
 }
 
+#titulo2{
+
+    margin-left: 10px;
+}
+
+.headcad{
+    border: #000 1px solid;
+    display: flex;
+    align-items: center;
+    font-family: "Candal";
+    width: auto;
+    margin-right: 0;
+
+
+
+}
+
 body{
     background-repeat: no-repeat;
     height: 100%;
@@ -19,19 +36,31 @@ body{
     height: 100%;
     padding: 5px;
     margin-left:180px;
-  
+    
     background: #CABE82;
  
  
     }
 
-    .number{
+    #number{
       
-        /* display: inline-block; */
+     
         width: auto;
         height: fit-content;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 310px;
+
+        
+   
+    }
+
+    #number2{
+      
+  
+        width: auto;
+        height: fit-content;
+        text-align: center;
+        margin-top: 50px;
         
    
     }
@@ -92,15 +121,16 @@ body{
             font-size: 15px;
             position: absolute;
             right:    0;
-            bottom:   0;
+            bottom:   0; 
             font-family: "Candal";
             }
 
-    form{
+    #form1{
         margin-top: 90px;
-
     }
-            
+    #form2{
+        margin-top: 30px;
+    }    
     
 
 
