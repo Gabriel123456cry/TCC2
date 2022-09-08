@@ -253,10 +253,10 @@ h1 {
 
 }
 
-#titulo {
+#titulo1 {
 
-    display: inline-block;
-
+    font-size: 40px;
+    margin-left: 40rem;
 
 }
 
