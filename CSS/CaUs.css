@@ -13,7 +13,7 @@
 }
 
 .headcad{
-
+    border: #000 1px solid;
     display: flex;
     align-items: center;
     font-family: "Candal";
@@ -79,10 +79,10 @@ body{
             width: auto;
             font-family: "Candal";
             position: relative;
-        
+            border: black 1px solid;
             font-size: 15px;
             height: 90%;
-            border: solid 1px black; 
+         
             padding-left: 30%;
             display: flex;
     

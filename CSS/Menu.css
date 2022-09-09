@@ -253,10 +253,10 @@ h1 {
 
 }
 
-#titulo1 {
+#titulo {
 
-    font-size: 40px;
-    margin-left: 40rem;
+    display: inline-block;
+
 
 }
 
@@ -381,5 +381,73 @@ h1 {
 .vendidos {
     display: flex;
     align-items: center;
+
+}
+
+/* aba configurações */
+
+.config-scn {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: grid;
+    height: 100%;
+    justify-items: center;
+    justify-content: center;
+    background-color: #CABE82;
+    /* width: 285px; */
+    width: 0px;
+    box-shadow: 10px 5px 10px #82805e;
+    z-index: 1;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: width 1s;
+}
+
+#conf:hover{
+    cursor: pointer;
+}
+
+#linksconf{
+
+
+text-align: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+
+font-family: "Candal";
+font-size: 18px;
+ /* padding-top: 75px;  */
+
+
+
+
+}
+
+.lkc{
+    text-decoration: none;
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #A6A378;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    /* width: 240px; */
+    width: 200px;
+    height: 70px;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    box-shadow: 10px 5px 10px #82805e;
+    text-decoration: none;
+    margin-top: 35px;
+    
+
 
 }
