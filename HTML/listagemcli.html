@@ -33,13 +33,20 @@
             <div class="clienteex">
             </div>
         </div>
+        <div class="listalinha">
+            <div class="clienteex">
+            </div>
+            <div class="clienteex">
+            </div>
+        </div>
+      
     </div>
 
 
     <div id="bntliscli">
            
-        <a id="bnt" onclick="abreconf()" > 
-            <div > Montar Pedido</div>
+        <a id="bnt" onclick="abreconf2()" > 
+            <div > novo cliente</div>
         </a>
 
     </div>
@@ -78,16 +85,43 @@
 
     </div>
 
-    <div class="config-scn" id="config-aba"  onmouseleave="fechaconf()">
-        <div >
-            <div id="linksconf" >
-                <img src="../IMG/conf.png" >
-                
-                <a href="../HTML/#" class="lkc">Editar Usuário</a>
-                <a href="../HTML/Cadastroope.html" class="lkc" class="sidebtn">Cadastro Usuário</a>
-                <a href="../HTML/cadcli.html" class="lkc">Cadastro de Cliente</a>
+    <div class="clicad" id="cadcli_lis"  onmouseleave="fechaconf2()">
 
-            </div>
+            
+        <div class="cad">
+            
+      
+            <div class="headcad">
+          <a onclick="fechaconf2()" class="seta" > 
+            
+          <img src="../IMG/imgseta.png" alt="">
+          </a>
+       
+          <h1 id="titulo2">Cadastro de cliente</h1>
+        </div>
+          <div id="conteudo">
+          <form action="" id="form2">
+          <label>Nome/empresa</label>
+          <input name="nome_cli" autocomplete="off">
+          <label>endereço</label>
+          <input name="endereco_cli" autocomplete="off">
+          <label>contato</label>
+          <input name="contato_cli" autocomplete="off">
+          <label>E-mail</label>
+          <input name="email_cli" autocomplete="off">
+          <label>CPF</label>
+          <input name="CPF_cli" autocomplete="off">
+          <label>Apelido(Não obrigatório)</label>
+          <input name="CPF_cli" autocomplete="off">
+    
+    </div>
+          <input  type="submit" value="Confirmar">
+          </form>
+  
+       
+
+
+
     </div>
     
 
