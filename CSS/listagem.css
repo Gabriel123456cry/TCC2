@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Chenla');
+
+.clienteex{
+    width: 35vw;
+    height: 224px;
+    padding: 5px;
+
+    background: #CABE82;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-right:50px ;
+    
+   
+ 
+    }
+#lista{
+
+    border: #000000 1px solid;
+    margin-left: 12rem;
+    margin-top: 1rem;
+    height: fit-content;
+    display: grid;
+}
+
+.listalinha{
+   border: #000000 solid 1px;
+   height: 224px;
+   width: 100%;
+   display: flex;
+   margin-top: 10px;
+}
+
+
+#pes {
+    float: right;
+    padding: 6px;
+    font-size: 17px;
+   
+    padding: 10px;
+    font-size: 1rem;
+    height: auto;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #CABE82;
+    border:none;
+    margin-right:15px ;
+  }
+
+    
+#env{
+    background-color: #CABE82;
+    border:none;
+    margin-top: 6px;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+#pesf{ border: 3px solid #000;
+    border-radius: 15px;
+    display: inline-block;
+    height: 50px;
+    width: 455px;
+
+}
+
+#abapes {
+    position: sticky;
+    top: 0;
+    /* display: flex; */
+    text-align: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 10px;
+    font-family: "Candal";
+    font-size: 25px;
+    background-color: #CABE82;
+    color: #000;
+    box-shadow: 0px 5px 10px #82805e;
+    width: auto;
+    /* margin-left: 285px; */
+    padding-left: 190px;
+
+}
+
