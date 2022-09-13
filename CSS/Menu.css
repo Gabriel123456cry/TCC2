@@ -313,9 +313,9 @@ margin-left: 15px;
     width: 80%;
     height: 135px;
     font-size: 50px;
-
+    text-decoration: none;
     padding-bottom: 15px;
-
+    color: #000;
     display: flex;
     justify-content: space-evenly;
 }
@@ -327,6 +327,7 @@ margin-left: 15px;
     font-family: 'Candal';
     font-style: normal;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .pen {

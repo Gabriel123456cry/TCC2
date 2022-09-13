@@ -18,10 +18,12 @@
 #lista{
 
 
-    margin-left: 12rem;
-    margin-top: 1rem;
-    height: fit-content;
+    padding-left: 12rem;
+    padding-top: 1rem;
+    height: auto;
+    width: auto;
     display: grid;
+    border: #000 solid 1px;
 }
 
 .listalinha{
@@ -86,10 +88,9 @@
 text-align: right;
 height: auto;
 width: 82vw;
-bottom: 0;
 margin-left: 12rem;
-margin-top: 1rem;
-position: sticky;
+margin-top: 33rem;
+position: fixed;
 
 }
 
@@ -165,7 +166,7 @@ position: sticky;
             width: auto;
             font-family: "Candal";
             position: relative;
-            font-size: 15px;
+            font-size: 10px;
             height: 90%;
          
             /* padding-left: 30%; */
@@ -183,7 +184,7 @@ position: sticky;
         border-bottom: 3px solid #000;
         padding: 10px;
         font-size: 15px;
-        height: 40px;
+        height: 30px;
         width: 425px;
         margin-bottom: 20px;
         border-radius: 15px;
@@ -211,7 +212,7 @@ position: sticky;
 
   
     #form2{
-        margin-top: 30px;
+        margin-top: 10px;
     }    
 
     #seta{
@@ -233,5 +234,10 @@ position: sticky;
         height: fit-content;
     }
 
+
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
 
 

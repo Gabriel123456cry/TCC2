@@ -81,7 +81,7 @@
             <div href="#" class="MP">Listar
                 Pedidos</div>
         </a>
-        <a class="sidebtn" href="../HTML/listagemcli.html"> <img class="imgbtn" src="../IMG/LC.png">
+        <a class="sidebtn" href="#"> <img class="imgbtn" src="../IMG/LC.png">
             <div href="#" class="MP">Lista de
                 Clientes</div>
         </a>
