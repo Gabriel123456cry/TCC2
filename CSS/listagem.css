@@ -3,20 +3,21 @@
 .clienteex{
     width: 35vw;
     height: 224px;
-    padding: 5px;
-
+    padding-left: 5px;
+    display: grid;
     background: #CABE82;
     border: 3px solid #000000;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     margin-right:50px ;
+    text-align: left;
     
    
  
     }
 #lista{
 
-    border: #000000 1px solid;
+
     margin-left: 12rem;
     margin-top: 1rem;
     height: fit-content;
@@ -24,7 +25,7 @@
 }
 
 .listalinha{
-   border: #000000 solid 1px;
+
    height: 224px;
    width: 100%;
    display: flex;
@@ -36,7 +37,7 @@
     float: right;
     padding: 6px;
     font-size: 17px;
-   
+    margin-top: 5px;
     padding: 10px;
     font-size: 1rem;
     height: auto;
@@ -82,7 +83,6 @@
 
 
 #bntliscli{
-border: #000 1px solid;
 text-align: right;
 height: auto;
 width: 82vw;
@@ -135,7 +135,6 @@ position: sticky;
 
 
 .headcad{
-    border: #000 1px solid;
     display: flex;
     align-items: center;
     font-family: "Candal";
@@ -158,36 +157,7 @@ position: sticky;
  
     }
 
-    #number{
-      
-     
-        width: auto;
-        height: fit-content;
-        text-align: center;
-        margin-top: 310px;
-
-        
-   
-    }
-
-    #number2{
-      
   
-        width: auto;
-        height: fit-content;
-        text-align: center;
-        margin-top: 50px;
-        
-   
-    }
-
-    #nummargin{
-
-        margin-right: 50px;
-     
-       
-    }
-
    
     
     #conteudo{
@@ -195,7 +165,6 @@ position: sticky;
             width: auto;
             font-family: "Candal";
             position: relative;
-            border: black 1px solid;
             font-size: 15px;
             height: 90%;
          
@@ -245,11 +214,24 @@ position: sticky;
         margin-top: 30px;
     }    
 
-    .seta{
-
+    #seta{
+        margin-right: 8px;
         cursor:pointer
     }
 
+
+    .font{
+        font-family: "Chenla";
+        font-size: 15px;
+    }
+
+    .inlicli {
+        font-family: 'Candal';
+        font-style: normal;
+        font-size: 15px;
+
+        height: fit-content;
+    }
 
 
 
