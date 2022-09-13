@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,88 +8,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/Menu.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/montarPedido.css">
-    <title>Montar Pedido</title>
+    <title>Menu</title>
 </head>
 
-<body >
+<body>
 
     <!--Menu Horizontal-->
-    <div class="headerPedido">
-
-    
-        <div  class="SorveteTipo">
-            <h1 id="massas">Massas</h1>
+    <div class="header">
+        <div class="vendidos">
+            <h1 id="titulo">Mais vendidos</h1>
+            <img src="../IMG/grafico.png" class="icones" alt="" id="graf">
         </div>
-
-        <div  class="SorveteTipo">
-            <h1 id="picole">Picolés</h1>
+        <div id="config">
+            <a href="../Index.html"><img src="../IMG/carrinho.png" class="icones" alt="" id="carrinho"></a>
+            <img src="../IMG/conf.png" class="icones" onclick="abreconf()" id="conf">
         </div>
-
-        <div  class="SorveteTipo">
-            <h1 id="coberturas">Coberturas</h1>
-        </div>
-      
-        <div  class="SorveteTipo">
-            <h1 id="trevinho">Trevinho</h1>
-        </div>
-      
-        <a href="../Index.html"><img src="../IMG/carrinho.png" class="icones" alt="" id="carrinhoPedido"></a>
 
     </div>
     <!--Conteúdo do Site-->
-    
-    <div class="conteudo">
-
-        <div class="tabelaMontagem">
-
-        
-            <div class="itemTab">
-           <div id="tabelatxt">Morango</div><div id="tabelatxt">  5L   1L   P</div>
+    <div class="scroll">
+        <div>
+            <h1 id="teste">Pedidos Pendentes</h1>
         </div>
-    
+        <div class="conteudo">
+            <div class="teste2">
+                <div class="sectionone">
+                    <a class="info">ID </a>
+                    <a class="info">Variavel </a>
+                    <a class="info">java pendentes</a>
+                </div>
 
-        <div class="itemTab">
-            <div id="tabelatxt">Chocolate</div><div id="tabelatxt">  5L   1L   P</div>
-         </div>
+                <div class="sectiontwo">
+                    <a><u class="info">Quandidade de itens: variavel items </u></a>
+                    <u class="info">Clientes:variavel nome</u>
+                </div>
+                <div class="sectiontwo">
+                    <a><u class="info">data: variavel data </u></a>
+                    <u class="info">total:variavel valor</u>
+                </div>
 
-    
-         <div class="itemTab">
-            <p id="tabelatxt">Limão</p><p id="tabelatxt">  5L   1L   P</p>
-         </div>
-         
-         <div class="itemTab">
-            <p id="tabelatxt">Limão</p><p id="tabelatxt">  5L   1L   P</p>
-         </div>
-
-         <div class="itemTab">
-            <p id="tabelatxt">Limão</p><p id="tabelatxt">  5L   1L   P</p>
-         </div>
- 
-         
-  
-    </div>
-
-    
-        
+            </div>
+        </div>
 
     </div>
-
 
     <!--Menu Vertical-->
 
     <div id="menuho">
         <div id="operador">
             <img src="../IMG/icon.png" id="icon" alt="">
-            <h1 id="nome">Operador: Exemplo</h1>
 
-        </div>
+            <h1 id="nome">Operador:  <?php
+            include_once 'session_home.php';
 
-        <div id="menuho">
-        <div id="operador">
-            <img src="../IMG/icon.png" id="icon" alt="">
-            <h1 id="nome">Operador: Exemplo</h1>
-
+            $nome_oper = $_SESSION['nome_session'];
+            
+            $firstname = explode(" ", $nome_oper);
+            echo "$nome_oper";    ?></h1>
         </div>
 
 
@@ -121,11 +98,12 @@
         <div >
             <div id="linksconf" >
                 <img src="../IMG/conf.png" >
-                
-                <a href="../HTML/#" class="lkc">Editar Usuário</a>
-                <a href="../HTML/Cadastroope.html" class="lkc" class="sidebtn">Cadastro Usuário</a>
                 <a href="../HTML/cadcli.html" class="lkc">Cadastro de Cliente</a>
-
+                <a href="../HTML/Cadastroope.html" class="lkc" class="sidebtn">Cadastro Usuário</a>
+                <a href="../HTML/#" class="lkc">Editar Pedido</a>
+                <a href="../HTML/#" class="lkc">Editar Usuário</a>
+                <a href="../HTML/#" class="lkc">Editar Cliente</a>
+    
             </div>
     </div>
     

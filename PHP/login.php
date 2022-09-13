@@ -1,21 +1,59 @@
 <?php
+
 session_start();
-include "conect.php";
+
+include 'conexao.php';
+
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-$login=$SQL->query("SELECT * FROM operador WHERE email='$email' 
-AND senha='$senha'");
+$logar = $connect->query("SELECT * FROM operador WHERE email_oper = '$email' AND senha = '$senha'");
+
+while ($linha = mysqli_fetch_array($logar)) {
+    $nivel_acess = $linha['nivel_acess'];
+    $nome_oper = $linha['nome_oper'];
+
+}
+
+//número de variáveis que retornou do banco
+$contagem = mysqli_num_rows($logar);
 
 
-While ($translin = mysqli_fetch_array($login)){
-    $email = $translin ['email'];
-    $nome= $translin ['nome_ops']; 
-    $id= $translin ['id_op']; 
-    $senha= $translin ['senha']; 
-    }
+//nivel_acess = 1 (adm)
+If ($contagem == 1 && $nivel_acess == 1) {
+    $_SESSION['id_session'] = $id_oper;
+    $_SESSION['email_session'] = $email;
+    $_SESSION['senha_session'] = $senha;
+    $_SESSION['nivel_session'] = $nivel_acess;
+    $_SESSION['nome_session'] = $nome_oper;
 
-$_SESSION['nomes'] = $nome;
-$_SESSION['emails'] = $email;
-$_SESSION['id'] = $id;
-$_SESSION['senha'] = $senha;
+    header('location: Menu.php');
+    exit;
+}
+
+
+//nivel_acess = 2 (membro)
+elseif ($contagem == 1 && $nivel_acess == 2) {
+    $_SESSION['id_session'] = $id_oper;
+    $_SESSION['email_session'] = $email;
+    $_SESSION['senha_session'] = $senha;
+    $_SESSION['nivel_session'] = $nivel_acess;
+    $_SESSION['nome_session'] = $nome_oper;
+
+    header('location: home2.php');
+    exit;
+}
+
+//else {
+ //   $_SESSION['id_session'] = $id_oper;
+  //  $_SESSION['email_session'] = $email;
+  //  $_SESSION['senha_session'] = $senha;
+  //  $_SESSION['nivel_session'] = $nivel_acess;
+   // $_SESSION['nome_session'] = $nome_oper;
+
+  //  header('location: errorloginsenha.php');
+   // exit;
+//}
+
+
+?>
