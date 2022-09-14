@@ -48,7 +48,7 @@ body{
         width: auto;
         height: fit-content;
         text-align: center;
-        margin-top: 310px;
+        margin-top: 110px;
 
         
    
@@ -93,7 +93,7 @@ body{
             text-align: left;
         }
         
-        input{
+        .input{
         border-bottom: 3px solid #000;
         padding: 10px;
         font-size: 15px;
@@ -103,6 +103,31 @@ body{
         border-radius: 15px;
         background-color: #a6a378;
         }
+        .input2{
+            border-bottom: 3px solid #000;
+            padding: 10px;
+            font-size: 15px;
+            height: 40px;
+            width: 425px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            margin-top: 15px;
+            background-color: #a6a378;
+            cursor: pointer;
+            }
+
+            .input2:hover{
+                border-bottom: 3px solid #000;
+                padding: 10px;
+                font-size: 15px;
+                height: 40px;
+                width: 425px;
+                margin-bottom: 20px;
+                border-radius: 15px;
+                margin-top: 15px;
+                background-color:  #a6a380;
+                cursor: pointer;
+                }
 
         input[type="radio"]{
             border-bottom: 1px solid #000;
@@ -152,6 +177,26 @@ body{
 
         text-align: center;
     }
+
+    
+    .rdiv{
+
+        display:flex;
+        margin-top: 5px;
+        width: 250px;
+    }
+
+    input[type="file"]{ width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+   
+    
     
 
 
