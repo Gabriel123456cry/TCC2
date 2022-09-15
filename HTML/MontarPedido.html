@@ -10,125 +10,182 @@
     <title>Montar Pedido</title>
 </head>
 
-<body >
+<body>
 
     <!--Menu Horizontal-->
     <div class="headerPedido">
 
-    
-        <div  class="SorveteTipo">
-            <h1 id="massas">Massas</h1>
+
+        <div class="SorveteTipo" class="cursor" id="massabtn" onclick="opnMassas()">
+            <h1 class="noclick" >Massas</h1>
         </div>
 
-        <div  class="SorveteTipo">
-            <h1 id="picole">Picolés</h1>
+        <div class="SorveteTipo" class="cursor" id="picolebtn" onclick="opnPicoles()">
+            <h1 class="noclick">Picolés</h1>
         </div>
 
-        <div  class="SorveteTipo">
-            <h1 id="coberturas">Coberturas</h1>
+        <div class="SorveteTipo" class="cursor" id="coberturabtn" onclick="opnCoberturas()">
+            <h1 class="noclick">Coberturas</h1>
         </div>
-      
-        <div  class="SorveteTipo">
-            <h1 id="trevinho">Trevinho</h1>
+
+        <div class="SorveteTipo" class="cursor" id="trevinhobtn" onclick="opnTrevinho()">
+            <h1 class="noclick">Trevinho</h1>
         </div>
-      
-        <a href="../Index.html"><img src="../IMG/carrinho.png" class="icones" alt="" id="carrinhoPedido"></a>
+
+        <a><img src="../IMG/carrinho.png" class="icones" alt="" id="carrinhoPedido"></a>
 
     </div>
     <!--Conteúdo do Site-->
-    
+
     <div class="conteudo">
 
-        <div class="tabelaMontagem">
 
-        
-            <div class="itemTab">
-           <div id="tabelatxt">Morango</div><div id="tabelatxt">  5L   1L   P</div>
+        <!--Tabela de Massas-->
+        <div class="tabelaMontagem" id="tableM">
+
+
+            <div class="itemTab" id="tabelatxt">
+                <t>Morango</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>chocolate</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>uva</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>pessego</t>
+                <t>1L 5L P</t>
+            </div>
+
+
         </div>
-    
 
-        <div class="itemTab">
-            <div id="tabelatxt">Chocolate</div><div id="tabelatxt">  5L   1L   P</div>
-         </div>
+        <!--Tabela de Picolés-->
+        <div class="tabelaMontagem" id="tableP">
 
-    
-         <div class="itemTab">
-            <p id="tabelatxt">Limão</p><p id="tabelatxt">  5L   1L   P</p>
-         </div>
-         
-         <div class="itemTab">
-            <p id="tabelatxt">Limão</p><p id="tabelatxt">  5L   1L   P</p>
-         </div>
 
-         <div class="itemTab">
-            <p id="tabelatxt">Limão</p><p id="tabelatxt">  5L   1L   P</p>
-         </div>
- 
-         
-  
-    </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>Teste</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>Teste</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>Teste</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>Teste</t>
+                <t>1L 5L P</t>
+            </div>
 
-    
-        
+
+        </div>
+
+
+        <!--Tabela de coberturas-->
+        <div class="tabelaMontagem" id="tableC">
+
+
+            <div class="itemTab" id="tabelatxt">
+                <t>Coberturas</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>Coberturas</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>Coberturas</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>Coberturas</t>
+                <t>1L 5L P</t>
+            </div>
+
+
+        </div>
+
+        <!--Tabela de trevinho-->
+        <div class="tabelaMontagem" id="tableT">
+
+
+            <div class="itemTab" id="tabelatxt">
+                <t>trevinho</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>trevinho</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>trevinho</t>
+                <t>1L 5L P</t>
+            </div>
+            <div class="itemTab" id="tabelatxt">
+                <t>trevinho</t>
+                <t>1L 5L P</t>
+            </div>
+
+
+        </div>
+
+
+
+
 
     </div>
 
 
     <!--Menu Vertical-->
 
-    
-
-        <div id="menuho">
+    <div id="menuho">
         <div id="operador">
             <img src="../IMG/icon.png" id="icon" alt="">
             <h1 id="nome">Operador: Exemplo</h1>
 
         </div>
 
-
-
-
-        <a class="sidebtn" href="../HTML/Menu.html"> <img class="imgbtn" src="../IMG/casinha.png">
-            <div href="#" class="MP">Menu</div><p class="sairadjustment"></p>
-        </a>
-        <a class="sidebtn" href="../HTML/grafico.html"> <img class="imgbtn" src="../IMG/historico.png">
-            <div href="#" class="MP">Histórico de Vendas</div>
-        </a>
-        <a class="sidebtn" href="#"> <img class="imgbtn" src="../IMG/LP.png">
-            <div href="#" class="MP">Listar
-                Pedidos</div>
-        </a>
-        <a class="sidebtn" href="../HTML/listagemcli.html"> <img class="imgbtn" src="../IMG/LC.png">
-            <div href="#" class="MP">Lista de
-                Clientes</div>
-        </a>
-        <a class="sidebtn" href="#"> <img class="imgbtn" src="../IMG/EX.png">
-            <div href="#" class="MP">Sair</div><p id="sairadjustment"></p>
-        </a>
-        <img src="../IMG/trevoice.png" class="logo" alt="">
-
-    </div>
-
-
-    <!-- aba de configurações -->
-    <div class="config-scn" id="config-aba"  onmouseleave="fechaconf()">
-        <div >
-            <div id="linksconf" >
-                <img src="../IMG/conf.png" >
-                
-                <a href="../HTML/#" class="lkc">Editar Usuário</a>
-                <a href="../HTML/Cadastroope.html" class="lkc" class="sidebtn">Cadastro Usuário</a>
-                <a href="../HTML/cadcli.html" class="lkc">Cadastro de Cliente</a>
+        <div id="menuho">
+            <div id="operador">
+                <img src="../IMG/icon.png" id="icon" alt="">
+                <h1 id="nome">Operador: Exemplo</h1>
 
             </div>
-    </div>
-    
 
 
 
 
+            <a class="sidebtn" href="../HTML/Menu.html"> <img class="imgbtn" src="../IMG/casinha.png">
+                <div href="#" class="MP">Menu</div><p class="sairadjustment"></p>
+            </a>
+            <a class="sidebtn" href="#"> <img class="imgbtn" src="../IMG/historico.png">
+                <div href="#" class="MP">Histórico de Vendas</div>
+            </a>
+            <a class="sidebtn" href="#"> <img class="imgbtn" src="../IMG/LP.png">
+                <div href="#" class="MP">Lista de Produtos</div>
+            </a>
+            <a class="sidebtn" href="../HTML/listagemcli.html"> <img class="imgbtn" src="../IMG/LC.png">
+                <div href="#" class="MP">Lista de
+                    Clientes</div>
+            </a>
+            <a class="sidebtn" href="#"> <img class="imgbtn" src="../IMG/EX.png">
+                <div href="#" class="MP">Sair</div>
+                <p id="sairadjustment"></p>
+            </a>
+            <img src="../IMG/trevoice.png" class="logo" alt="">
+
+        </div>
 
 
 
-            <script src="../JAVASCRIPT/controle.js"></script>
+
+            <script src="../JAVASCRIPT/Montagem.js"></script>
 </body>
