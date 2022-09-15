@@ -17,7 +17,7 @@ function fechaconf() {
 
 
 function abreconf2() {
-    document.getElementById("cadcli_lis").style.width = "750px";
+    document.getElementById("cadcli_lis").style.width = "450px";
     document.getElementById("cadcli_lis").style.borderLeft = "1px solid black";
     document.getElementById("cadcli_lis").style.borderBottom = "1px solid black";
     document.getElementById("linksconf").style.opacity = 1;
