@@ -1,6 +1,8 @@
 /* Geral */
-
-@import url('https://fonts.googleapis.com/css?family=Candal');
+@font-face {
+    font-family: candal;
+    src: url(../fonts/Candal-Regular.ttf);
+  }
 
 
 

@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Chenla');
+@font-face {
+    font-family: chenla;
+    src: url(../fonts/Chenla-Regular.ttf);
+  }
 
 .pedidoex{
     width: 80vw;
