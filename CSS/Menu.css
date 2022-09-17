@@ -305,6 +305,11 @@ margin-left: 15px;
 
 }
 
+.vertical{
+    border-left: 3px solid black;
+            height: 100%;
+}
+
 .teste2 {
     padding: 5px;
     margin-left: 12rem;
@@ -346,7 +351,7 @@ margin-left: 15px;
 }
 
 .sectionone {
-    border-right:black 3px solid;
+ 
     margin-top: 0px;
     width: 20%;
     margin-left: 20px;
@@ -358,10 +363,10 @@ margin-left: 15px;
 }
 
 .sectiontwo {
-    width: 30%;
+    width: 40%;
     display: inline-block;
     margin-left: 10px;
-    border-right:black 3px solid;
+
 
 
 
