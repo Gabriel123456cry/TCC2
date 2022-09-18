@@ -6,6 +6,7 @@
     src: url(../fonts/Candal-Regular.ttf);
   }
 
+  /* lista dos clientes */
 .clienteex{
     width: 35vw;
     height: 224px;
@@ -42,6 +43,7 @@
    margin-top: 10px;
 }
 
+/* pesquisa */
 
 #pes {
     float: right;
@@ -91,6 +93,8 @@
     padding-left: 190px;
 }
 
+
+/* botão e aba de novo cliente */
 
 #bntliscli{
 text-align: right;
