@@ -32,3 +32,30 @@ function fechaconf2() {
 }
 
   
+//controle da aba do carrinho de compras
+
+function abrecar() {
+
+    document.getElementById("car-aba").style.width = "450px";
+    document.getElementById("car-aba").style.borderLeft = "1px solid black";
+    document.getElementById("car-aba").style.borderBottom = "1px solid black";
+    document.getElementById("linksconf").style.opacity = 1;
+   
+    document.getElementById("config-aba").style.height = "0px";
+    document.getElementById("config-aba").style.borderLeft = "0px";
+    document.getElementById("config-aba").style.borderBottom = "0px solid black";
+    document.getElementById("linksconf").style.opacity = 0;
+    document.getElementById("linksconf").style.transitionDelay = "0s";
+
+
+}
+
+function fechacar() {
+    document.getElementById("car-aba").style.width = "0px";
+    document.getElementById("car-aba").style.borderLeft = "0px";
+    document.getElementById("car-aba").style.borderBottom = "0px solid black";
+    document.getElementById("linksconf").style.opacity = 0;
+    document.getElementById("linksconf").style.transitionDelay = "0s";
+
+    
+}

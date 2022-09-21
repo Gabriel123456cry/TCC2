@@ -3,6 +3,9 @@ let picole = 0
 let coberturas = 0
 let trevinho = 0
 
+var item1 = 0
+document.getElementById("qtd1").textContent = item1; 
+
 
 function opnMassas(){
 
@@ -65,4 +68,32 @@ function opnTrevinho(){
         document.getElementById("tableT").style.display = "grid"; 
     
     
+
 }
+
+
+
+function addqtd(){
+
+ item1 = item1 + 1
+
+
+
+ document.getElementById("qtd1").textContent = item1; 
+}
+
+function removeqtd(){
+
+
+
+        item1 = item1 - 1
+
+        if(item1 <= 0){
+                item1 = 0
+        }
+
+        document.getElementById("qtd1").textContent = item1; 
+       }
+
+
+      
