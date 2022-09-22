@@ -7,10 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/Menu.css">
     <link rel="stylesheet" type="text/css" href="../CSS/his.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/montarPedido.css">
     <title></title>
 </head>
 
 <body >
+
+<!-- Funçao do carrinho de compra -->
+
+<div class="car-scn" id="car-aba"  onmouseleave="fechacar()">
+    
+    <img src="../IMG/carrinho.png" class="icones" id="carrinhoPop">
+    <div class="carpop" >
+       
+    
+        <div class="itemCar" id="cartxt">
+            <t>Morango</t>
+            <t> <button class="carBtn" onclick="addqtd()">+</button> <div class="carQtd" id="qtd1"> 1 </div> <button  class="carBtn" onclick="removeqtd()">-</button></t>
+        </div>
+
+        <div class="itemCar" id="cartxt">
+            <t>Morango</t>
+            <t> <button  class="carBtn">+</button> <div class="carQtd"> 10 </div> <button  class="carBtn">-</button></t>
+        </div>
+
+        <div class="itemCar" id="cartxt">
+            <t>Morango</t> 
+            <t> <button  class="carBtn">+</button>  <div class="carQtd"> 7  </div> <button  class="carBtn">-</button></t>
+        </div>
+        </div>
+        <div>
+            <p class="total">Total: R$ 123,00</p>
+        </div>
+</div>  
+
+
+
+
 
     <!--Menu Horizontal-->
     <div id="headerhis">
@@ -26,7 +59,7 @@
 
 
         <div id="config">
-            <a href="../Index.html"><img src="../IMG/carrinho.png" class="icones" alt="" id="carrinho"></a>
+            <a><img src="../IMG/carrinho.png" class="icones" onclick="abrecar()" id="carrinho"></a>
             <img src="../IMG/conf.png" class="icones" onclick="abreconf()" id="conf">
         </div>
 
@@ -294,12 +327,12 @@
         <a class="sidebtn" href="../HTML/MontarPedido.html"> <img class="imgbtn" src="../IMG/MP.png">
             <div class="MP"> Montar Pedido</div>
         </a>
-        <a class="sidebtn" href="../HTML/grafico.html"> <img class="imgbtn" src="../IMG/historico.png">
-            <div href="#" class="MP">Histórico de Vendas</div>
+        <a class="sidebtn" href="../HTML/Menu.html"> <img class="imgbtn" src="../IMG/casinha.png">
+            <div href="#" class="MP">Menu</div><p class="sairadjustment"></p>
         </a>
-        <a class="sidebtn" href="#"> <img class="imgbtn" src="../IMG/LP.png">
-            <div href="#" class="MP">Listar
-                Pedidos</div>
+        <a class="sidebtn" href="ProdutosList.html"> <img class="imgbtn" src="../IMG/LP.png">
+            <div href="#" class="MP">Lista de Produtos</div>
+        </a>
         </a>
         <a class="sidebtn" href="../HTML/listagemcli.html"> <img class="imgbtn" src="../IMG/LC.png">
             <div href="#" class="MP">Lista de
