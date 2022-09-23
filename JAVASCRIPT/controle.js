@@ -59,3 +59,13 @@ function fechacar() {
 
     
 }
+
+
+function newPopup(){
+    varWindow = window.open (
+    'editarope.html',
+    'pagina',
+     "width=850, height=655, top=500, left=310, scrollbars=no, menubar=no  my_file.htm ', ' null' , ' width = 800, height = 800, toolbar = no , scrollbars = no , location = no, resizable = no " );
+
+    
+    }

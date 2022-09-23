@@ -7,6 +7,13 @@
     list-style: none;
 }
 
+@media all and (display-mode: minimal-ui) {
+    html {
+      margin: 0;
+      border: 5px solid black;
+    }
+  }
+
 #titulo2{
 
     margin-left: 10px;
@@ -84,7 +91,7 @@ body{
             font-size: 15px;
             height: 90%;
             border:red solid 1px;
-            padding-top: 300px;
+            /* padding-top: 300px; */
             padding-left: 30%;
             display: flex;
     

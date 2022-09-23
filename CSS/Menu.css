@@ -446,6 +446,8 @@ margin-left: 15px;
 
 #conf:hover{
     cursor: pointer;
+    transform:  rotate(59.5deg);
+    transition-duration: 0.5s;
 }
 
 #carrinho:hover{
