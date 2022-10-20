@@ -15,7 +15,7 @@
     <!--Menu Horizontal-->
     <div id="headerclihis">
 
-        <a href="grafico.html" class="link">
+        <a href="grafico.php" class="link">
         <div  class="vendidos">
             <h1 class="headerhis">Nome do Cliente</h1>
             <h1 class="headerhis ">ID: 0000</h1>
@@ -43,8 +43,14 @@
     </div>
     <!--Conteúdo do Site-->
     <div class="scroll">      
-            <a class="teste2" href="../HTML/pedido.html">
-     
+            <a class="teste2" href="pedido.php">
+                <!-- <div class="sectionone">
+                    <u class="info">ID</u>
+                    <u class="info">ID</u>
+                </div> -->
+
+                <!-- <div class = "vertical"></div> -->
+
                 <div class="sectiontwo">
                     <u class="info">Quandidade de itens: variavel items</u>
                     <u class="info">Clientes:variavel nome</u>
@@ -74,17 +80,17 @@
 
 
 
-        <a class="sidebtn" href="../HTML/MontarPedido.html"> <img class="imgbtn" src="../IMG/MP.png">
+        <a class="sidebtn" href="MontarPedido.php"> <img class="imgbtn" src="../IMG/MP.png">
             <div class="MP"> Montar Pedido</div>
         </a>
-        <a class="sidebtn" href="../HTML/grafico.html"> <img class="imgbtn" src="../IMG/historico.png">
+        <a class="sidebtn" href="grafico.php"> <img class="imgbtn" src="../IMG/historico.png">
             <div href="#" class="MP">Histórico de Vendas</div>
         </a>
-        <a class="sidebtn" href="ProdutosList.html"> <img class="imgbtn" src="../IMG/LP.png">
+        <a class="sidebtn" href="ProdutosList.php"> <img class="imgbtn" src="../IMG/LP.png">
             <div href="#" class="MP">Lista de Produtos</div>
         </a>
         </a>
-        <a class="sidebtn" href="../HTML/listagemcli.html"> <img class="imgbtn" src="../IMG/LC.png">
+        <a class="sidebtn" href="listagemcli.php"> <img class="imgbtn" src="../IMG/LC.png">
             <div href="#" class="MP">Lista de
                 Clientes</div>
         </a>
@@ -103,9 +109,9 @@
             <div id="linksconf" >
                 <img src="../IMG/conf.png" >
                 
-                <a href="../HTML/#" class="lkc">Editar Usuário</a>
-                <a href="../HTML/Cadastroope.html" class="lkc" class="sidebtn">Cadastro Usuário</a>
-                <a href="../HTML/cadcli.html" class="lkc">Cadastro de Cliente</a>
+                <a class="lkc">Editar Usuário</a>
+                <a href="Cadastroope.php" class="lkc" class="sidebtn">Cadastro Usuário</a>
+                <a href="cadcli.php" class="lkc">Cadastro de Cliente</a>
 
             </div>
     </div>

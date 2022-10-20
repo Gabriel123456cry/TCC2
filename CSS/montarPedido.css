@@ -63,7 +63,7 @@
     display: flex;
 
 
-    border: 1px red solid;
+  
     width: 90%;
     height: 30px;
     justify-content: space-between;
@@ -108,7 +108,8 @@
 .carpop {
     display: grid;
     
-
+padding-left: 20px;
+padding-right: 20px;
     padding-bottom: 70px;
 }
 
@@ -118,7 +119,7 @@
     top: 0;
 
     margin-right: 10px;
-    margin-left: 200px;
+    margin-left: 190px;
     margin-top: 20px;
  
 
@@ -172,6 +173,26 @@
     text-decoration: none;
 }
 
+#carBtn{
+
+    display:inline-flex;
+
+    justify-content: center;
+    align-items: center;
+    background: #A6A378;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    /* width: 240px; */
+    width: 25px;
+    height: 25px;
+
+
+    
+    transition: width 1s;
+    text-decoration: none;
+}
+
+
 .montBtn{
 
     display:inline-flex;
@@ -222,5 +243,44 @@ background-color: #CABE82;
     bottom: 0;
 font-size: 25px;
     font-family: Candal;
+    
+}
+
+#bntliscli{
+    text-align: right;
+    
+    /* border: red 3px solid; */
+position: fixed;
+   
+
+    right: 0;
+    bottom: 0;
+
+    margin-bottom: 30px;
+    margin-right: 30px;
+
+     
+    
+
+
+
+}    
+
+.bntFim{
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: "Candal";
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    height: 50px;
+    padding-top: 10px;
+    background-color: #CABE82;
+    border: 2px solid #000000; 
+     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 15px;
     
 }

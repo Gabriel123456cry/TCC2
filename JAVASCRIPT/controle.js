@@ -31,7 +31,7 @@ function fechaconf2() {
     document.getElementById("linksconf").style.transitionDelay = "0s";
 }
 
-  
+
 //controle da aba do carrinho de compras
 
 function abrecar() {
@@ -40,7 +40,7 @@ function abrecar() {
     document.getElementById("car-aba").style.borderLeft = "1px solid black";
     document.getElementById("car-aba").style.borderBottom = "1px solid black";
     document.getElementById("linksconf").style.opacity = 1;
-   
+
     document.getElementById("config-aba").style.height = "0px";
     document.getElementById("config-aba").style.borderLeft = "0px";
     document.getElementById("config-aba").style.borderBottom = "0px solid black";
@@ -57,15 +57,34 @@ function fechacar() {
     document.getElementById("linksconf").style.opacity = 0;
     document.getElementById("linksconf").style.transitionDelay = "0s";
 
-    
+
 }
 
 
-function newPopup(){
-    varWindow = window.open (
-    'editarope.html',
-    'pagina',
-     "width=850, height=655, top=500, left=310, scrollbars=no, menubar=no  my_file.htm ', ' null' , ' width = 800, height = 800, toolbar = no , scrollbars = no , location = no, resizable = no " );
+function newPopup() {
+    alert("teste")
+    // varWindow = window.open(
+    //     'editarope.php',
+    //     'pagina',
+    //     "width=850, height=655, top=500, left=310, scrollbars=no, menubar=no  my_file.php ', ' null' , ' width = 800, height = 800, toolbar = no , scrollbars = no , location = no, resizable = no ");
 
-    
-    }
+
+}
+
+
+function Popup() {
+    alert("teste")
+   
+        
+
+}
+
+function noPopup() {
+    varWindow = window.close()
+}
+
+
+function goBack() {
+    window.history.back()
+}
+

@@ -6,53 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/Menu.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/histcli.css">
-    <title></title>
+    <title>Menu</title>
 </head>
 
 <body >
 
     <!--Menu Horizontal-->
-    <div id="headerclihis">
+    <div class="header">
 
-        <a href="grafico.html" class="link">
+        <a href="grafico.php" class="link">
         <div  class="vendidos">
-            <h1 class="headerhis">Nome do Cliente</h1>
-            <h1 class="headerhis ">ID: 0000</h1>
+            <h1 id="titulo">Mais vendidos</h1>
+            <img src="../IMG/grafico.png" class="icones" alt="" id="graf">
         </div>
         </a>
-        <div id="bntliscli">
-           
-            <a id="bnt" onclick=""> 
-                <div > Deletar cliente</div>
-            </a>
-    
-        </div>
-        <div id="bntliscli2" >
-           
-            <a id="bnt2" onclick=""> 
-                <div>Limpar</div>
-            </a>
-    
-        </div>
-        <!-- <div id="config">
+
+        <div id="config">
             <a href="../Index.html"><img src="../IMG/carrinho.png" class="icones" alt="" id="carrinho"></a>
             <img src="../IMG/conf.png" class="icones" onclick="abreconf()" id="conf">
-        </div> -->
+        </div>
 
     </div>
     <!--Conteúdo do Site-->
-    <div class="scroll">      
-            <a class="teste2" href="../HTML/pedido.html">
-     
+    <div class="scroll">
+        <div>
+            <h1 id="teste">historico pedido</h1>
+        </div>
+        
+      
+            <a class="teste2" href="pedido.php">
+                <div class="sectionone">
+                    <u class="info">ID </u>
+                    <u class="info">Variavel </u>
+                    <u class="info">java pendentes</u>
+                </div>
+
                 <div class="sectiontwo">
-                    <u class="info">Quandidade de itens: variavel items</u>
+                    <u class="info">Quandidade de itens: variavel items </u>
                     <u class="info">Clientes:variavel nome</u>
                 </div>
-                <div class = "vertical"></div>
-                <div class="sectiontwo">
+                <div class="sectionthree">
                     <u class="info">data: variavel data </u>
-                    <u class="info">total:variavel valor</u>
                 </div>
             </a>
             
@@ -74,17 +68,17 @@
 
 
 
-        <a class="sidebtn" href="../HTML/MontarPedido.html"> <img class="imgbtn" src="../IMG/MP.png">
+        <a class="sidebtn" href="MontarPedido.php"> <img class="imgbtn" src="../IMG/MP.png">
             <div class="MP"> Montar Pedido</div>
         </a>
-        <a class="sidebtn" href="../HTML/grafico.html"> <img class="imgbtn" src="../IMG/historico.png">
+        <a class="sidebtn" href="grafico.php"> <img class="imgbtn" src="../IMG/historico.png">
             <div href="#" class="MP">Histórico de Vendas</div>
         </a>
-        <a class="sidebtn" href="ProdutosList.html"> <img class="imgbtn" src="../IMG/LP.png">
-            <div href="#" class="MP">Lista de Produtos</div>
+        <a class="sidebtn" href="#"> <img class="imgbtn" src="../IMG/LP.png">
+            <div href="#" class="MP">Listar
+                Pedidos</div>
         </a>
-        </a>
-        <a class="sidebtn" href="../HTML/listagemcli.html"> <img class="imgbtn" src="../IMG/LC.png">
+        <a class="sidebtn" href="listagemcli.php"> <img class="imgbtn" src="../IMG/LC.png">
             <div href="#" class="MP">Lista de
                 Clientes</div>
         </a>
@@ -103,9 +97,9 @@
             <div id="linksconf" >
                 <img src="../IMG/conf.png" >
                 
-                <a href="../HTML/#" class="lkc">Editar Usuário</a>
-                <a href="../HTML/Cadastroope.html" class="lkc" class="sidebtn">Cadastro Usuário</a>
-                <a href="../HTML/cadcli.html" class="lkc">Cadastro de Cliente</a>
+                <a href="" class="lkc">Editar Usuário</a>
+                <a href="Cadastroope.php" class="lkc" class="sidebtn">Cadastro Usuário</a>
+                <a href="cadcli.php" class="lkc">Cadastro de Cliente</a>
 
             </div>
     </div>

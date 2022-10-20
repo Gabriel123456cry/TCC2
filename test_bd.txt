@@ -14,13 +14,10 @@ nivel_acess int(10) not null,
 id_oper int primary key auto_increment
 );
 
-INSERT INTO `operador` VALUES ('thi', ''angu@adm.com.br', ', '123', 2, null);
-INSERT INTO `operador` VALUES ('angu', 'angu@adm.com.br', '123', 1, null);
-
 
 create table cliente(
 nome_cli varchar(255) not null,
-apelido varchar(255) not null,
+apelido varchar(255),
 nome_empresa varchar(255) not null,
 email_cli varchar(255) not null,
 telefone int not null,
@@ -28,6 +25,10 @@ cpf int not null,
 endereco varchar(255) not null,
 id_cli int primary key auto_increment
 );
+
+INSERT INTO `cliente` VALUES ('angu', 'sla', 'mercadinho ivonete', 'umapessoalegal@gmail.com', 123456789, 123456789, ruaaloisio_ferreira, null);
+INSERT INTO `cliente` VALUES ('ortega', null, 'mercadinho ivonete', 'umapessoalegal@gmail.com', 123456789, 123456789, 'nsei' , null);
+INSERT INTO `cliente` VALUES ('kelly', null, 'mercadinho ivonete', 'umapessoalegal@gmail.com', 123456789, 123456789, 'nsei', null);
 
 
 
@@ -57,7 +58,13 @@ tamanho_uni varchar(255) not null,
 id_prod int primary key auto_increment
 );
 
-*********create table itens_de_linha(
+*********
+INSERT INTO `operador` VALUES ('thi', ''angu@adm.com.br', ', '123', 2, null);
+INSERT INTO `operador` VALUES ('angu', 'angu@adm.com.br', '123', 1, null);
+
+
+
+create table itens_de_linha(
 quant int not null,
 total int not null,
 id_produto int not null,
